@@ -1,0 +1,23 @@
+<div class="footer" style="display: flex">
+  <div class="count-footer">
+    <span class="items-count">
+      {{ length }} item{{ length > 1 ? "s" : "" }}
+    </span>
+  </div>
+  <div class="filter-footer">
+    <button
+      type="button"
+      class="filter-btn"
+      *ngFor="let btn of filterButtons"
+      [ngClass]="{ active: btn.isActive }"
+      (click)="handleFilter(btn)"
+    >
+      {{ btn.label }}
+    </button>
+  </div>
+  <div class="clear-completed" (click)="clearItemCompleted()">
+    <button class="btn-clear" [ngClass]="{ 'border-none': !hasComplete$ }">
+      Clear Completed
+    </button>
+  </div>
+</div>

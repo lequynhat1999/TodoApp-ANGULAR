@@ -1,0 +1,16 @@
+<div class="list">
+  <app-todo-item
+    *ngFor="let todo of todos$ | async"
+    [todo]="todo"
+    (changeStatus)="changeStatus($event)"
+    (changeContentItem)="changeContentItem($event)"
+    (showPopupDelete)="showPopupDelete($event)"
+  ></app-todo-item>
+  <app-popup-delete
+    [isShowPopup]="isShowPopup"
+    [msg]="msg"
+    [idItem]="idItem"
+    (closePopupDelete)="closePopupDelete()"
+    (confirmPopupDelete)="deleteItem($event)"
+  ></app-popup-delete>
+</div>

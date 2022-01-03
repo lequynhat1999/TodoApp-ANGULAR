@@ -1,0 +1,11 @@
+<div class="popup-delete" [hidden]="!isShowPopup">
+  <div class="content">{{msg}}</div>
+  <div class="button-group" style="display: flex;">
+    <div class="btn-cancel" (click)="closePopup()">
+      <button>Hủy</button>
+    </div>
+    <div class="btn-delete" (click)="confirmDelete()">
+      <button>Xác nhận</button>
+    </div>
+  </div>
+</div>

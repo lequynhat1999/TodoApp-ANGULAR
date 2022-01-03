@@ -1,0 +1,47 @@
+<div
+  class="item"
+  style="display: flex"
+  (mouseover)="isHovered = true"
+  (mouseout)="isHovered = false"
+>
+  <div class="checkbox">
+    <input
+      type="checkbox"
+      [checked]="todo.isCompleted"
+      (change)="changeTodoStatus()"
+      [id]="todo.id"
+    />
+  </div>
+  <label class="content-item" [for]="todo.id">{{ todo.content }}</label>
+  <div
+    class="icon-item"
+    style="display: none"
+    [ngClass]="{ 'icon-active': isHovered }"
+  >
+    <div class="wrapper-icon" style="display: flex">
+      <div
+        class="icon-edit"
+        (click)="isEditing = true"
+        [hidden]="todo.isCompleted"
+      >
+        <i class="eva eva-edit-outline"></i>
+      </div>
+      <div class="icon-delete" (click)="deleteTodo(todo)">
+        <i class="eva eva-close"></i>
+      </div>
+    </div>
+  </div>
+  <form
+    action="edit-form"
+    *ngIf="isEditing"
+    class="form-update"
+    (keyup.enter)="submitEdit($event)"
+  >
+    <input
+      type="text"
+      name="editTodo"
+      class="input-update"
+      [(ngModel)]="todo.content"
+    />
+  </form>
+</div>

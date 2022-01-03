@@ -1,0 +1,28 @@
+.header
+{
+  height: 40px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 1px 0.5px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.icon-wrapper
+{
+  width: 40px;
+  line-height: 40px;
+  color: grey;
+  font-size: 40px;
+  background: white;
+  transition: 250ms all ease-in-out;
+  cursor: pointer;
+}
+
+.icon-wrapper:hover, .icon-wrapper:active
+{
+  color: black;
+}
+
+.header-input
+{
+  display: flex;
+}

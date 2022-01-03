@@ -1,0 +1,13 @@
+.input input{
+  line-height: 40px;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin-left: 20px;
+  font-size: 35px;
+}
+
+::placeholder
+{
+  color: rgba(0,0,0,0.3);
+}

@@ -1,0 +1,52 @@
+.item
+{
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  margin-left: 15px;
+}
+
+.checkbox input
+{
+  font-size: 30px;
+}
+
+.content-item
+{
+  padding-left: 20px;
+  color: black;
+}
+
+.icon-item
+{
+  position: absolute;
+  right: 5px;
+}
+
+.icon-delete
+{
+  font-size: 24px;
+  color: red;
+}
+
+.icon-edit
+{
+  font-size: 24px;
+  color:green
+}
+
+.icon-active
+{
+  display: block !important;
+}
+
+.input-update
+{
+  width: 200px;
+}
+
+.form-update
+{
+  position: absolute;
+  left: 32px;
+}

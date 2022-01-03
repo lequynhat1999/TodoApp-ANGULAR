@@ -1,0 +1,50 @@
+.footer
+{
+  text-align: left;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+}
+
+.clear-completed
+{
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+}
+
+.btn-clear
+{
+  padding: 0 8px;
+}
+
+.btn-clear:active
+{
+  border: 1px wheat solid;
+}
+
+.filter-footer
+{
+  position: absolute;
+  right: 250px;
+}
+
+.filter-btn
+{
+  cursor: pointer;
+  border: none;
+  padding: 0 10px;
+}
+
+
+
+.active
+{
+  border: 1px solid gray;
+}
+
+.border-none
+{
+  border: none;
+}
